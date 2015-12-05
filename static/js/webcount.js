@@ -1,14 +1,14 @@
 
 $("#main_form").submit(function(e) {
-    e.preventDefault();
+    e.preventDefault();  // Avoid page reloading
     $.post("/api/", {"site": $("#site").val()}, function(data) {
         var obj = jQuery.parseJSON(data);
-        var wordcloud = $("#wordcloud");
+        var wordcloud_div = $("#wordcloud");
         for (word in obj) {
             var span = $('<span />').attr('data-weight', obj[word][1]).html(obj[word][0]);
-            wordcloud.append(span);
+            wordcloud_div.append(span);
         }
-        wordcloud.awesomeCloud({
+        wordcloud_div.awesomeCloud({
             "size" : {
                 "grid" : 1,
                 "normalize" : true,
