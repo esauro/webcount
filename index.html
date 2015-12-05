@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>A simple counter for webapps</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/webcount.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1>A simple counter for webapps</h1>
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="col-lg-12 text-center">
+            <form class="form-inline" id="main_form">
+                <div class="form-group">
+                    <label for="site">URL: </label>
+                    <input type="text" class="form-control" id="site" placeholder="Please insert a URL to inspect">
+                </div>
+                <button type="submit" class="btn btn-default">Send URL</button>
+            </form>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <div id="wordcloud" class="wordcloud"></div>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="/static/js/jquery.awesomeCloud-0.2.js"></script>
+<script src="/static/js/webcount.js"></script>
+</body>
+
+</html>
