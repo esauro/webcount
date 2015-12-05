@@ -1,9 +1,9 @@
-from flask import Flask
-from flask import request
-from flask import abort
-from parser.webtokenizer import BSTokenizer
 import json
 
+from flask import Flask
+from flask import abort
+from flask import request
+from webtokenizer import BSTokenizer
 
 app = Flask(__name__)
 
